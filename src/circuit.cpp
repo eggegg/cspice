@@ -111,7 +111,7 @@ void Circuit::dfs(
          // Be ware that, we have to take the risk of
          // hash(a) + hash(b) == hash(c) + hash(d),
          // though I don't think it would happen so easily.
-         hashValue += hash(current_tree[i]->formula().c_str()) ;
+         hashValue += util_hash(current_tree[i]->formula().c_str()) ;
 
          sign *= current_tree[i]->sign() ;
       }
