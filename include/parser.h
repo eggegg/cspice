@@ -10,7 +10,7 @@ using namespace std;
 
 class Parser {
 public:
-   Parser(const char *) ;
+   Parser(const char* fname = nullptr) ;
    const Circuit& getCircuit() const { return circuit; }
    const vector<SimulateConfig>& getConfig() const { return config; }
    Circuit& getCircuit() { return circuit; }
