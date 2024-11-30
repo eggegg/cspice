@@ -11,8 +11,8 @@ class Source {
          _name() ,
          _prevValue(0.0) ,
          _nextValue(0.0) ,
-         _n1(NULL) ,
-         _n2(NULL) { }
+         _n1(0) ,
+         _n2(0) { }
 
       Source(const char * name , const int n1 , const int n2 , const double pv , const double nv) :
          _name(name) ,

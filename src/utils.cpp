@@ -98,7 +98,7 @@ ostream& operator<<(ostream& out , const Element& element) {
    return out ;
 }
 
-unsigned long long hash(const char * p) {
+unsigned long long util_hash(const char * p) {
    // using FNV-1a hash algorithm
    const unsigned long long prime = 1099511628211ull ;
    unsigned long long result = 14695981039346656037ull ;

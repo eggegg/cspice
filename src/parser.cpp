@@ -1,4 +1,4 @@
-Parser::Parser(const char * fname = NULL) {
+Parser::Parser(const char * fname) {
    extern FILE * yyin ;
    extern int yyparse() ;
 

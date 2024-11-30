@@ -282,7 +282,7 @@ FNAME (([0-9a-zA-Z\.\-_])+\.eps)
 .  {
       /* rest cases */
       char msg[40] ;
-      sprintf(msg , "Unexpected character: '%s'" , escape(yytext)) ;
+      snprintf(msg , 40, "Unexpected character: '%s'" , escape(yytext)) ;
       yyerror(msg) ;
       return yytext[0] ;
    }
